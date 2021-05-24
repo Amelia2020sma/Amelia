@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        const getPrivatBankUrl = () => {
-            const totalPrise = 100;
-            const cardNumber = '4149499122650920';
-            return `https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%22${cardNumber}%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
-        };
-
-        const onDonateClick = () => {
-            const url = getPrivatBankUrl();
-            window.location.href = url;
-        };
+        // const getPrivatBankUrl = () => {
+        //     const totalPrise = 100;
+        //     const cardNumber = '4149499122650920';
+        //     return `https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%22${cardNumber}%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
+        // };
+        //
+        // const onDonateClick = () => {
+        //     const url = getPrivatBankUrl();
+        //     window.location.href = url;
+        // };
     </script>
 </head>
 <body>
     <h1>Help Amelia</h1>
     <a href="https://amelia2020.netlify.app/#" onclick="onDonateClick()" class="btn-get-started scrollto" style="z-index: 3">Пожертвувати 100грн</a>
+
+    <!-- Vendor JS Files -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/modal-video.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/superfish.min.js"></script>
+    <script src="./js/hoverIntent.js"></script>
+    <script src="./js/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

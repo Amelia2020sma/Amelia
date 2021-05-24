@@ -42,8 +42,14 @@ const onProductClick = (product) => {
     updateTotal();
 };
 
+// const getPrivatBankUrl = () => {
+//     const totalPrise = configuration.totalPrice;
+//     const cardNumber = '4149499122650920';
+//     return `https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%22${cardNumber}%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
+// };
+
 const getPrivatBankUrl = () => {
-    const totalPrise = configuration.totalPrice;
+    const totalPrise = 100;
     const cardNumber = '4149499122650920';
     return `https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%22${cardNumber}%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
 };
