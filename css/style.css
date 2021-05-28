@@ -155,7 +155,7 @@ span {
 .basket {
   background: rgb(252,237,237);
   background: linear-gradient(90deg, rgba(243, 233, 215, 0.8) 0%, rgba(247,230,198,0.7343312324929971) 100%);
-  border-radius: 3em;
+  /*border-radius: 3em;*/
   padding: 15px 50px;
 }
 
