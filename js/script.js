@@ -21,6 +21,15 @@ const init = () => {
     }
 };
 
+const isAllSelected = () => {
+    for(const property in configuration.products) {
+        if (!configuration.products[property].isSelected) {
+            return false;
+        }
+    }
+    return true;
+}
+
 const onProductClick = (product) => {
     const price = configuration.products[product].price;
     const isSelected = configuration.products[product].isSelected;
@@ -34,6 +43,12 @@ const onProductClick = (product) => {
       : configuration.totalPrice + price;
 
     configuration.products[product].isSelected = !isSelected;
+
+    const isAllSelectedBool = isAllSelected();
+
+    isAllSelectedBool
+        ? document.getElementById(`thanks`).style.display = 'inline'
+        : document.getElementById(`thanks`).style.display = 'none';
 
     updateTotal();
 };
