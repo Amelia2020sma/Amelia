@@ -63,7 +63,8 @@ const getPrivatBankUrl = () => {
 
 const onDonateClick = () => {
     const url = getPrivatBankUrl();
-    window.location.href = url;
+    window.open(url, '_system');
+    //window.location.href = url;
 };
 
 init();
