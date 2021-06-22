@@ -58,7 +58,7 @@ const onProductClick = (product) => {
 const getPrivatBankUrl = () => {
     const totalPrise = configuration.totalPrice;
     const cardNumber = '';
-    return `https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
+    return `goto://DeviceBrowser?url=https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22amt%22%3A%22${totalPrise}%22%2C%22ccy%22%3A%22UAH%22%7D`;
 };
 
 const onDonateClick = () => {
